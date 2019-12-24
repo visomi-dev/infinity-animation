@@ -1,0 +1,97 @@
+.infinity {
+  width: 420px;
+}
+
+.infinity-left,
+.infinity-right {
+  display: inline-block;
+
+  width: 168px;
+  height: 168px;
+
+  border: 4px solid #9e9e9e;
+}
+
+.infinity-left {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation-name: left-color;
+  animation-name: left-color;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  border-radius: 80px 120px 0 120px;
+}
+
+.infinity-right {
+  float: right;
+
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation-name: right-color;
+  animation-name: right-color;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  border-radius: 120px 80px 120px 0;
+}
+
+@keyframes left-color {
+  0% {
+    border-right: 4px solid #f44336;
+  }
+  15% {
+    border-right: 4px solid #9e9e9e;
+  }
+  60% {
+    border-bottom: 4px solid #2196f3;
+  }
+  73% {
+    border-left: 4px solid #ffeb3b;
+  }
+  75% {
+    border-bottom: 4px solid #9e9e9e;
+  }
+  85% {
+    border-top: 4px solid #4caf50;
+  }
+  90% {
+    border-left: 4px solid #9e9e9e;
+  }
+  100% {
+    border-top: 4px solid #9e9e9e;
+  }
+}
+
+@keyframes right-color {
+  10% {
+    border-bottom: 4px solid #f44336;
+  }
+  23% {
+    border-right: 4px solid #4caf50;
+  }
+  25% {
+    border-bottom: 4px solid #9e9e9e;
+  }
+  35% {
+    border-top: 4px solid #ffeb3b;
+  }
+  40% {
+    border-right: 4px solid #9e9e9e;
+  }
+  48% {
+    border-left: 4px solid #2196f3;
+  }
+  50% {
+    border-top: 4px solid #9e9e9e;
+  }
+  65% {
+    border-left: 4px solid #9e9e9e;
+  }
+}
